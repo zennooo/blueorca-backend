@@ -114,7 +114,7 @@ app.post("/api/send-otp", async (req, res) => {
 
     // send email via Resend
     await resend.emails.send({
-      from: "Blue Orca AI <onboarding@resend.dev>",
+      from:'onboarding@resend.dev',
       to: email,
       subject: "Kode Verifikasi Blue Orca",
       html: `
